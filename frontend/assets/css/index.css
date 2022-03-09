@@ -119,6 +119,7 @@ input::placeholder {
 	color: white;
 	padding: 10px 30px;
 	margin-top: 10px;
+	border-radius: 50%;
 }
 
 .signIn:hover{
@@ -148,11 +149,11 @@ input::placeholder {
 }
 
 
-/* .btnSend {
-	width: 150px; */
-	/* margin-top: 15px; */
-	/* margin-left: 155px;
-} */
+.btnSend {
+	width: 150px; 
+	margin-top: 15px;
+	margin-left: 155px;
+}
 
 
 
