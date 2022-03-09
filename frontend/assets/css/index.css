@@ -93,8 +93,7 @@ input::placeholder {
 .custom-select option {
 	color: #333;
 }
-
-.flight {
+.show {
 	width: 100%;
 	padding: 9px 0;
 	margin-top: 15px;
@@ -104,9 +103,9 @@ input::placeholder {
 	/* background: transparent; */
 	box-shadow: none;
 	border-radius: 0;
-}
+} 
 
-.flight:hover{
+.show:hover{
 	background: #212529;
 	border: 1px solid #212529;
 }
@@ -119,7 +118,6 @@ input::placeholder {
 	color: white;
 	padding: 10px 30px;
 	margin-top: 10px;
-	border-radius: 50%;
 }
 
 .signIn:hover{
@@ -146,14 +144,31 @@ input::placeholder {
 	letter-spacing: 0.1em;
 	text-align: center;
 	margin-top: 10px;
+	transition: .5s;
 }
 
+.btns{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 
-.btnSend {
-	width: 150px; 
+}
+
+.btnRegister{
+	width: 150px;
+	padding: 9px 0;
 	margin-top: 15px;
-	margin-left: 155px;
+	font-size: 12x;
+	border: 1px solid #ced4da;
+	box-shadow: none;
+	border-radius: 0;
 }
 
+.btnRegister:hover{
+	color:white;
+	background-color: #212529;
+	border: 1px solid #212529; 
+	transition: .5s;
+}
 
 
