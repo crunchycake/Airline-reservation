@@ -111,6 +111,7 @@ input::placeholder {
 	border: 1px solid #212529;
 }
 
+
 .signIn {
 	/* display: flex; */
 	background-color: #0b5ed7;
@@ -137,9 +138,21 @@ input::placeholder {
 	margin-top: 10px;
 }
 
-.btnSend {
-	width: 50%;
-	margin-top: 15px;
-	margin-left: 155px;
-	
+.search{
+	color: #0b5ed7;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-align: center;
+	margin-top: 10px;
 }
+
+
+/* .btnSend {
+	width: 150px; */
+	/* margin-top: 15px; */
+	/* margin-left: 155px;
+} */
+
+
+
