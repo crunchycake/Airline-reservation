@@ -47,6 +47,10 @@ router.get('/signup', async function (req, res) {
 	res.render('signup')
 })
 
+router.get('/flights', async function (req, res){
+	res.render('flights')
+})
+
 // zapisywanie do bazy
 
 router.post('/postUserData', async function (req, res) {

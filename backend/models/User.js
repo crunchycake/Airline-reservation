@@ -5,6 +5,7 @@ const CharacterSchema = new mongoose.Schema({
     password: String,
     name: String,
     lastName: String,
+    email: String,
     age: Number,
     
 });
