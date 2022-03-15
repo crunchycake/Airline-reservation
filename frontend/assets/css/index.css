@@ -171,4 +171,7 @@ input::placeholder {
 	transition: .5s;
 }
 
-
+.price {
+	font-size: 20px;
+	font-weight: bold;
+}
