@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url(../../dist/img/big.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100wh;
+  height: 100vh; }
+
+.booking-form-box {
+  max-width: 350px;
+  border: 1px solid #ced4da;
+  margin: 10% auto 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); }
+
+.radio-btn {
+  padding: 0 44px; }
+
+.radio-btn .btn {
+  margin: 20px 10px 20px 0;
+  box-shadow: none;
+  color: #000; }
+
+.radio-btn .btn::after {
+  content: '';
+  height: 15px;
+  width: 15px;
+  top: -2px;
+  left: -1px;
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  border: 3px solid #fff;
+  visibility: visible;
+  /* border-radius: 50%; */ }
+
+.radio-btn .btn:checked::after {
+  content: '';
+  background-color: #000;
+  transition: 0.5s; }
+
+.radio-btn span {
+  color: black;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: bold; }
+
+.booking-form {
+  padding: 0 20px 20px; }
+
+.form-select {
+  font-size: 12px;
+  border-radius: 0; }
+
+.booking-form label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 10px;
+  color: black;
+  font-size: 12px;
+  font-weight: bold; }
+
+input::placeholder {
+  color: black; }
+
+.input-grp {
+  width: 151px;
+  display: inline-block; }
+
+.form-control {
+  font-size: 12px;
+  border-radius: 0;
+  /* color: transparent; */
+  box-shadow: none; }
+
+.custom-select option {
+  color: #333; }
+
+.show {
+  width: 100%;
+  padding: 9px 0;
+  margin-top: 15px;
+  margin-left: 155px;
+  font-size: 12x;
+  border: 1px solid #ced4da;
+  /* background: transparent; */
+  box-shadow: none;
+  border-radius: 0; }
+
+.show:hover {
+  background: #212529;
+  border: 1px solid #212529; }
+
+.signIn {
+  /* display: flex; */
+  background-color: #0b5ed7;
+  border: 1px solid #0d6efd;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 10px; }
+
+.signIn:hover {
+  color: white;
+  background-color: #212529;
+  border: 1px solid #212529; }
+
+/* SIGN IN SITE */
+.register h2 {
+  color: #0b5ed7;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-top: 10px; }
+
+.search {
+  color: #0b5ed7;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-top: 10px;
+  transition: 0.5s; }
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.btnRegister {
+  width: 150px;
+  padding: 9px 0;
+  margin-top: 15px;
+  font-size: 12x;
+  border: 1px solid #ced4da;
+  box-shadow: none;
+  border-radius: 0; }
+
+.btnRegister:hover {
+  color: white;
+  background-color: #212529;
+  border: 1px solid #212529;
+  transition: 0.5s; }
+
+.price {
+  font-size: 20px;
+  font-weight: bold; }

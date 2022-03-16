@@ -4,7 +4,7 @@
 	padding: 0;
 }
 body {
-	background-image: url(./img/airplane-1670266_1920.jpg);
+	background-image: url(../../dist/img/big.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -58,7 +58,6 @@ body {
 
 .booking-form {
 	padding: 0 20px 20px;
-	
 }
 
 .form-select {
@@ -103,13 +102,12 @@ input::placeholder {
 	/* background: transparent; */
 	box-shadow: none;
 	border-radius: 0;
-} 
+}
 
-.show:hover{
+.show:hover {
 	background: #212529;
 	border: 1px solid #212529;
 }
-
 
 .signIn {
 	/* display: flex; */
@@ -120,8 +118,8 @@ input::placeholder {
 	margin-top: 10px;
 }
 
-.signIn:hover{
-	color:white;
+.signIn:hover {
+	color: white;
 	background-color: #212529;
 	border: 1px solid #212529;
 }
@@ -137,24 +135,23 @@ input::placeholder {
 	margin-top: 10px;
 }
 
-.search{
+.search {
 	color: #0b5ed7;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	text-align: center;
 	margin-top: 10px;
-	transition: .5s;
+	transition: 0.5s;
 }
 
-.btns{
+.btns {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
 }
 
-.btnRegister{
+.btnRegister {
 	width: 150px;
 	padding: 9px 0;
 	margin-top: 15px;
@@ -164,11 +161,11 @@ input::placeholder {
 	border-radius: 0;
 }
 
-.btnRegister:hover{
-	color:white;
+.btnRegister:hover {
+	color: white;
 	background-color: #212529;
-	border: 1px solid #212529; 
-	transition: .5s;
+	border: 1px solid #212529;
+	transition: 0.5s;
 }
 
 .price {

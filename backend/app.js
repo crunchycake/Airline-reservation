@@ -12,7 +12,7 @@ app.set('views', path.join(__dirname,'./../frontend/views'))
 app.set("view engine", "ejs")
 
 app.use("/js", express.static(path.join(__dirname,"./../frontend/js")))
-app.use("/assets", express.static(path.join(__dirname,"./../frontend/assets")))
+app.use("/dist", express.static(path.join(__dirname,"./../frontend/dist")))
 
 app.use('/', require('./routes/routes'))
 
