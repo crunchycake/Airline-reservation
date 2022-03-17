@@ -1,3 +1,5 @@
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
 // const sum = require('./sum').sum;
 // console.log("Hello World");
 // console.log(sum(2,3));
@@ -17,3 +19,6 @@ const showPrice = () => {
 }
 
 showPrice()
+
+/******/ })()
+;
