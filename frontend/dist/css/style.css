@@ -77,11 +77,11 @@ input::placeholder {
   /* color: transparent; */
   box-shadow: none; }
 
-.error-text {
-  margin: 5px 0 0 10px;
-  font-size: 20px;
+.error-text.error {
+  margin: 0 0 0 5px;
+  font-size: 10px;
   color: #0089fa;
-  display: none; }
+  visibility: hidden; }
 
 .custom-select option {
   color: #333; }
@@ -169,7 +169,8 @@ input::placeholder {
   height: 150px;
   background-color: transparent;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-  border: 1px solid #ced4da; }
+  border: 1px solid #ced4da;
+  transition: top .5s; }
 
 .popup p {
   font-size: 28px; }

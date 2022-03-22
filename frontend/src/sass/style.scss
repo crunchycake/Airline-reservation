@@ -89,11 +89,11 @@ input::placeholder {
 	box-shadow: none;
 }
 
-.error-text {
-	margin: 5px 0 0 10px;
-	font-size: 20px;
+.error-text.error {
+	margin: 0 0 0 5px;
+	font-size: 10px;
 	color: rgb(0, 137, 250);
-	display: none;
+	visibility: hidden;
 }
 
 .custom-select option {
