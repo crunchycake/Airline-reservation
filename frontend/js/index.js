@@ -8,59 +8,61 @@ const age = document.querySelector('#age')
 const btnReset = document.querySelector('.btnReset')
 const btnSend = document.querySelector('.btnSend')
 const popup = document.querySelector('.popup')
-
+const img = document.querySelector('.show-popup')
 
 
 
 // -------------------
 
-const showError = (input, msg) => {
-	// input przechowuje inputy
-	// msg przechowuje placeholder
+// const showError = (input, msg) => {
+// 	// input przechowuje inputy
+// 	// msg przechowuje placeholder
 
-const bookingform = input.parentElement
+// const bookingform = input.parentElement
+// console.log(input.parentElement);
 // const errorMsg = bookingform.querySelector('.error-text')
 
-// bookingform.classList.add('error')
+// bookingform.classList.add('error-text')
 // errorMsg.textContent = msg;
 
-}
+// }
 
+// const cleanError = input => {
+// 	const bookingform = input.parentElement
+// 	bookingform.classList.remove('error-text')
+// }
 
-const checkForm = input => {
-input.forEach(el => {
-	if(el.value === '' ) {
-		showError(el, el.placeholder)
-		// console.log(el.placeholder);
-		// console.log('error');
-	} else {
-		console.log('ok');
-	}
-})
-}
+// const checkForm = input => {
+// input.forEach(el => {
+// 	if(el.value === '' ) {
+// 		showError(el, el.placeholder)
+// 		// console.log(el.placeholder);
+// 		// console.log('error');
+// 	} else {
+// 		console.log('ok');
+// 	}
+// })
+// }
 
-// Input z funkcji 'checkForm' przechowuje tablicę z inputami. 
-// el odnosi się do każdej zmiennej, która znajduje się w tablicy 
+// // Input z funkcji 'checkForm' przechowuje tablicę z inputami. 
+// // el odnosi się do każdej zmiennej, która znajduje się w tablicy 
 
-btnSend.addEventListener('click', e => {
-	e.preventDefault();
-	checkForm([login, password, name, lastName, email, age])
+// btnSend.addEventListener('click', e => {
+// 	e.preventDefault();
+// 	checkForm([login, password, name, lastName, email, age])
 	
-})
+// })
 
 
 
-btnReset.addEventListener('click', e => {
-	e.preventDefault();
-	console.log('reset');
+// btnReset.addEventListener('click', e => {
+// 	e.preventDefault();
+// 	console.log('reset');
 
-	[login,password,name,lastName,email,age].forEach(el => {
-		el.value = '';
-	})
-})
-
-
-
+// 	[login,password,name,lastName,email,age].forEach(el => {
+// 		el.value = '';
+// 	})
+// })
 
 
 

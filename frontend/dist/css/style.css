@@ -77,12 +77,6 @@ input::placeholder {
   /* color: transparent; */
   box-shadow: none; }
 
-.error-text.error {
-  margin: 0 0 0 5px;
-  font-size: 10px;
-  color: #0089fa;
-  visibility: hidden; }
-
 .custom-select option {
   color: #333; }
 

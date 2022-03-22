@@ -6,8 +6,9 @@ const User = require('./../models/User')
 const { wrap } = require('module')
 const router = express.Router()
 
-const connectionString =
-	'mongodb+srv://mateusz1:fdt78n@cluster0.v52c7.mongodb.net/mySecondDatabase?retryWrites=true&w=majority'
+
+
+const connectionString = process.env.DB_MONGO;
 
 async function run() {
 	await mongoose
