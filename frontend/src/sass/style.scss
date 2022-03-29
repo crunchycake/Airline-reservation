@@ -1,3 +1,5 @@
+@import	'node_modules/bootstrap/scss/bootstrap';
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -211,4 +213,15 @@ input::placeholder {
 
 .show-popup {
 	top: 100px;
+}
+
+.alreadyRegistered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-weight: bold;
+	margin-top: 10px;
+	background-color: transparent;
+	transition: top .5s;
 }

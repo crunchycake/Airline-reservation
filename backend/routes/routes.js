@@ -4,7 +4,9 @@ const express = require('express')
 const mongoose = require('mongoose')
 const User = require('./../models/User')
 const { wrap } = require('module')
+const { appendFile } = require('fs')
 const router = express.Router()
+
 
 
 
@@ -28,8 +30,8 @@ async function run() {
 	}
 
 	await User.create([
-		{ login: 'aaa@aaa.com', password: 'aaa', name: 'Mateusz', lastName: 'Cieslik', age: 34, email: 'mateusz@wrap.pl' },
-		{ login: 'bbb@aaa.com', password: 'bbb', name: 'Miłosz', lastName: 'Nowak', age: 24, email: 'milosz@wp.pl' },
+		{ login: 'mateuszcieslik', password: '123456', name: 'Mateusz', lastName: 'Cieslik', age: 34, email: 'mateuszcieslik@gmail.com' },
+		{ login: 'anetacieslik', password: '654321', name: 'Aneta', lastName: 'Cieślik', age: 31, email: 'anetacieslik@gmail.com' },
 	])
 }
 
@@ -39,6 +41,10 @@ router.get('/', async function (req, res) {
 	res.render('index')
 })
 
+router.get('/login', async function (req, res) {
+	res.render('login')
+})
+
 router.get('/signup', async function (req, res) {
 	res.render('signup')
 })
@@ -46,6 +52,7 @@ router.get('/signup', async function (req, res) {
 router.get('/flights', async function (req, res){
 	res.render('flights')
 })
+
 
 // zapisywanie do bazy
 
@@ -67,5 +74,7 @@ router.post('/postUserData', async function (req, res) {
 	})
 	res.redirect('./')
 })
+
+
 
 module.exports = router

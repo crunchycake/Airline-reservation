@@ -6,6 +6,7 @@ require('dotenv').config({path: 'variables.env'});
 
 
 
+
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
@@ -19,7 +20,9 @@ app.use("/dist", express.static(path.join(__dirname,"./../frontend/dist")))
 
 app.use('/', require('./routes/routes'))
 
-
+// app.get("/frontend/views/login.ejs", (req, res) => {
+// 	res.render("login")
+// });
 
 app.listen(port, err => {
 	if (err) {

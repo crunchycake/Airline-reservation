@@ -1,4 +1,4 @@
-
+const bootstrap = require('bootstrap')
 const login = document.querySelector('#login')
 const name = document.querySelector('#name')
 const surname = document.querySelector('#surname')
@@ -80,3 +80,7 @@ const showPrice = () => {
 	totalPrice.textContent = price[number]
 }
 showPrice()
+
+function popupShow() {
+	popup.style.display = 'block'
+}
